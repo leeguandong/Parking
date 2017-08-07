@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/personal"
+            android:text="个人信息"
+            android:textSize="25dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFFACD" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" 
+                android:layout_weight="3">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        style="@style/Bottom_Tab_Style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="117dp"
+                        android:layout_marginTop="23dp"
+                        android:checked="true"
+                        android:drawableTop="@drawable/booking"
+                        android:text="预约记录" />
+
+                    <RadioButton
+                        style="@style/Bottom_Tab_Style"
+                        android:layout_marginTop="23dp"
+                        android:layout_height="117dp"
+                        android:drawableTop="@drawable/yuyue"
+                        android:text="车位续约" />
+
+                    <RadioButton
+                        style="@style/Bottom_Tab_Style"
+                        android:layout_marginTop="23dp"
+                        android:layout_height="117dp"
+                        android:drawableTop="@drawable/rent"
+                        android:text="车位租赁" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_weather"
+                android:layout_weight="1"
+                style="@style/Bottom_Tab_Style"
+                android:layout_width="76dp"
+                android:layout_height="182dp"
+                android:background="#FFFACD"
+                android:text="天气 预报"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFFACD" >
+
+            
+            <RadioGroup
+                android:id="@+id/rg_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_home"
+                    style="@style/Bottom_Tab_Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="117dp"
+                    android:layout_marginTop="23dp"
+                    android:checked="true"
+                    android:drawableTop="@drawable/mycar"
+                    android:text="我的车辆" />
+
+                <RadioButton
+                    android:id="@+id/rb_news"
+                    style="@style/Bottom_Tab_Style"
+                    android:layout_marginTop="23dp"
+                    android:drawableTop="@drawable/recorder"
+                    android:text="停车记录" />
+
+                <RadioButton
+                    android:id="@+id/rb_smart"
+                    style="@style/Bottom_Tab_Style"
+                    android:layout_marginTop="23dp"
+                    android:drawableTop="@drawable/msg"
+                    android:text="消息中心" />
+
+                <RadioButton
+                    android:id="@+id/rb_gov"
+                    style="@style/Bottom_Tab_Style"
+                    android:layout_marginTop="23dp"
+                    android:drawableTop="@drawable/ticket"
+                    android:text="我要发票" />
+            </RadioGroup>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/et_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/location"
+            android:ems="10"
+            android:hint="    我的位置" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/et_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/tips_navi"
+            android:ems="10"
+            android:hint="     终点车位" >
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:text="开始导航" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp" >
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                style="@style/Bottom_Tab_Style"
+                android:layout_marginTop="23dp"
+                android:checked="true"
+                android:drawableTop="@drawable/downapp"
+                android:text="离线地图" />
+
+            <RadioButton
+                style="@style/Bottom_Tab_Style"
+                android:layout_marginTop="23dp"
+                android:drawableTop="@drawable/icon_superfromto_navi"
+                android:text="导航语音" />
+
+            <RadioButton
+                style="@style/Bottom_Tab_Style"
+                android:layout_height="87dp"
+                android:layout_marginTop="23dp"
+                android:drawableTop="@drawable/icon_superfromto_weizhang"
+                android:text="违章查询" />
+
+            <RadioButton
+                style="@style/Bottom_Tab_Style"
+                android:layout_marginTop="23dp"
+                android:drawableTop="@drawable/hud_camera"
+                android:text="电子狗" />
+        </RadioGroup>
+    </RelativeLayout>
+
+</LinearLayout>

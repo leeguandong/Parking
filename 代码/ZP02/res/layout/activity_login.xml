@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15sp"
+    tools:context="com.hfut.parking.login.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:text="用户名"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/etuserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView1"
+        android:ems="10" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="14dp"
+        android:text="密    码"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/etuserPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/etuserName"
+        android:layout_toRightOf="@+id/textView1"
+        android:ems="10"
+        android:inputType="textPassword" >
+    </EditText>
+
+    <CheckBox
+        android:id="@+id/chkSaveName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="20sp"
+        android:checked="false"
+        android:text="保存用户名"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/chkSaveName"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20sp"
+        android:onClick="true"
+        android:text="登录"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/btnRegist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnLogin"
+        android:layout_alignBottom="@+id/btnLogin"
+        android:layout_marginLeft="38dp"
+        android:layout_toRightOf="@+id/chkSaveName"
+        android:onClick="true"
+        android:text="注册"
+        android:textSize="17sp" />
+
+</RelativeLayout>

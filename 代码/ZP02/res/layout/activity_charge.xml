@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="246dp"
+        android:layout_weight="0.72" >
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="义仓巷停车位"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignRight="@+id/textView1"
+            android:layout_marginRight="14dp"
+            android:ems="10"
+            android:text="2小时20分" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignRight="@+id/textView2"
+            android:layout_marginRight="14dp"
+            android:ems="10"
+            android:text="10  元" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_alignRight="@+id/textView3"
+            android:layout_marginRight="14dp"
+            android:ems="10"
+            android:text="0.00  元" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_alignRight="@+id/textView5"
+            android:layout_marginRight="14dp"
+            android:ems="10"
+            android:text="10  元" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="17dp"
+            android:text="实收金额:"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editText5"
+            android:layout_alignParentLeft="true"
+            android:text="折扣费用:"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editText3"
+            android:layout_alignParentLeft="true"
+            android:text="应收费用:"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editText2"
+            android:layout_alignParentLeft="true"
+            android:text="停车时长:"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_above="@+id/editText1"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/yicangxiangtingchewei" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/sebg"
+            android:drawableLeft="@drawable/pp_scanning_icon"
+            android:text="扫码付费"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btn_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/sebg"
+            android:drawableLeft="@drawable/payment_average_icon"
+            android:text="欠费补缴"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+</LinearLayout>

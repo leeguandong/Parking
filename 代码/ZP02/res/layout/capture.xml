@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <com.google.zxing.client.android.decode.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+    <!--
+    <Button
+        android:id="@+id/button_openClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:text="@string/openorclose_light" />
+    -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/button_openorcloseClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mzw_camera_open" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/barcode_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dip"
+        android:layout_marginLeft="60dip"
+        android:layout_marginRight="60dip"
+        android:text="@string/qrcode_notice"
+        android:textColor="#ffffff"
+        android:textSize="14.0sp" />
+
+</RelativeLayout>

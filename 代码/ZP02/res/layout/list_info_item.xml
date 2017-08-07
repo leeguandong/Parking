@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/info_iv_pic"
+        android:layout_width="110dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/a01" />
+
+    <TextView
+        android:id="@+id/info_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/info_iv_pic"
+        android:layout_marginLeft="32dp"
+        android:layout_toRightOf="@+id/info_iv_pic"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="停车位名称停车位名称"
+        android:textColor="#000"
+        android:textSize="20sp" />
+    
+    <TextView
+        android:id="@+id/info_tv_totlenumb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/info_iv_pic"
+        android:layout_alignLeft="@id/info_tv_name"
+        android:layout_alignRight="@+id/info_tv_name"
+        android:text="车位剩余数量"
+        android:textSize="16sp" />
+    
+    <TextView
+        android:id="@+id/info_tv_charge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/info_tv_totlenumb"
+        android:layout_alignBottom="@+id/info_tv_totlenumb"
+        android:layout_alignParentRight="true"
+        android:text="收费" />
+
+</RelativeLayout>
